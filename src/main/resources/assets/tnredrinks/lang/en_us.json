@@ -1,0 +1,51 @@
+{
+  "item.tnredrinks.empty_can": "Empty Can",
+
+  "item.tnredrinks.water_can.effect.water": "Can of Water",
+  "item.tnredrinks.water_can.effect.mundane": "Water Can (Mundane)",
+  "item.tnredrinks.water_can.effect.awkward": "Water Can (Awkward)",
+  "item.tnredrinks.water_can.effect.thick": "Water Can (Thick)",
+
+  "item.tnredrinks.zepzi_can.effect.water": "Zepzi Can (Unmixed)",
+  "item.tnredrinks.zepzi_can.effect.zepzi_base": "Zepzi Can (Brewing Base)",
+  "item.tnredrinks.zepzi_can.effect.zepzi": "Zepzi",
+  "item.tnredrinks.zepzi_can.effect.mundane": "Zepzi (Mundane)",
+  "item.tnredrinks.zepzi_can.effect.awkward": "Zepzi (Awkward)",
+  "item.tnredrinks.zepzi_can.effect.thick": "Zepzi (Thick)",
+
+  "item.tnredrinks.fantastic_can.effect.water": "Fantastic (Unmixed)",
+  "item.tnredrinks.fantastic_can.effect.fantastic_base": "Fantastic (Base)",
+  "item.tnredrinks.fantastic_can.effect.fantastic": "Fantastic",
+  "item.tnredrinks.fantastic_can.effect.mundane": "Fantastic (Mundane)",
+  "item.tnredrinks.fantastic_can.effect.awkward": "Fantastic (Awkward)",
+  "item.tnredrinks.fantastic_can.effect.thick": "Fantastic (Thick)",
+
+  "item.tnredrinks.spirit_can.effect.water": "Spirit (Unmixed)",
+  "item.tnredrinks.spirit_can.effect.spirit_base": "Spirit (Base)",
+  "item.tnredrinks.spirit_can.effect.spirit": "Spirit",
+  "item.tnredrinks.spirit_can.effect.mundane": "Spirit (Mundane)",
+  "item.tnredrinks.spirit_can.effect.awkward": "Spirit (Awkward)",
+  "item.tnredrinks.spirit_can.effect.thick": "Spirit (Thick)",
+
+  "item.tnredrinks.redcow_can.effect.water": "Redcow (Unmixed)",
+  "item.tnredrinks.redcow_can.effect.redcow_base": "Redcow (Base)",
+  "item.tnredrinks.redcow_can.effect.redcow": "Redcow",
+  "item.tnredrinks.redcow_can.effect.mundane": "Redcow (Mundane)",
+  "item.tnredrinks.redcow_can.effect.awkward": "Redcow (Awkward)",
+  "item.tnredrinks.redcow_can.effect.thick": "Redcow (Thick)",
+
+  "item.tnredrinks.monstrosity_can.effect.water": "Monstrosity (Unmixed)",
+  "item.tnredrinks.monstrosity_can.effect.monstrosity_base": "Monstrosity (Base)",
+  "item.tnredrinks.monstrosity_can.effect.monstrosity": "Monstrosity",
+  "item.tnredrinks.monstrosity_can.effect.mundane": "Monstrosity (Mundane)",
+  "item.tnredrinks.monstrosity_can.effect.awkward": "Monstrosity (Awkward)",
+  "item.tnredrinks.monstrosity_can.effect.thick": "Monstrosity (Thick)",
+
+  "item.tnredrinks.monstrositywhite_can.effect.water": "Monstrosity White (Unmixed)",
+  "item.tnredrinks.monstrositywhite_can.effect.monstrositywhite_base": "Monstrosity White (Base)",
+  "item.tnredrinks.monstrositywhite_can.effect.monstrositywhite": "Monstrosity White",
+  "item.tnredrinks.monstrositywhite_can.effect.mundane": "Monstrosity White (Mundane)",
+  "item.tnredrinks.monstrositywhite_can.effect.awkward": "Monstrosity White (Awkward)",
+  "item.tnredrinks.monstrositywhite_can.effect.thick": "Monstrosity White (Thick)"
+
+}

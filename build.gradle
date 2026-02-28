@@ -1,0 +1,81 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+// Minecraft version range text used only for filenames (not for dependencies)
+def mcRange = (project.findProperty("mc_range") ?: "unknown-mc").toString()
+
+repositories {
+	// Loom adds the essential repositories automatically.
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": inputs.properties.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+// ---- JAR NAMING ----
+// Dev jar (not what you publish to CurseForge)
+tasks.named("jar") {
+	archiveFileName.set("${base.archivesName.get()}-${mcRange}-${project.version}-dev.jar")
+
+	inputs.property "archivesName", base.archivesName.get()
+
+	from("LICENSE") {
+		rename { "${it}_${inputs.properties.archivesName}" }
+	}
+}
+
+// The jar you actually ship (Fabric Loom output)
+tasks.named("remapJar") {
+	archiveFileName.set("${base.archivesName.get()}-${mcRange}-${project.version}.jar")
+}
+
+// Optional: make sources jar match too
+tasks.named("remapSourcesJar") {
+	archiveFileName.set("${base.archivesName.get()}-${mcRange}-${project.version}-sources.jar")
+}
+
+// ---- MAVEN PUBLISHING ----
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
+			from components.java
+		}
+	}
+
+	repositories {
+		// Add publish repos here if you use them
+	}
+}

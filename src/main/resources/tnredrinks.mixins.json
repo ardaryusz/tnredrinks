@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.ardaryusz.tnredrinks.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"BrewingStandPotionSlotMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
